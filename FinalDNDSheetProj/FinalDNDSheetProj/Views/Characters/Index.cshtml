@@ -1,0 +1,153 @@
+﻿@model IEnumerable<DNDCharSheet.Models.Characters>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.charName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charRace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charExpPoints)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charClass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charBackground)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charSubrace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charAge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charHeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charWeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charEquipWeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charLifestyle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charDiety)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charAlightment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charPersonalityTraits)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charIdeals)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charBonds)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charFlaws)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charProficencies)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charFeatures)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charTraits)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.charName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charRace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charExpPoints)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charBackground)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charSubrace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charAge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charHeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charEquipWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charLifestyle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charDiety)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charAlightment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charPersonalityTraits)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charIdeals)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charBonds)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charFlaws)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charProficencies)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charFeatures)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charTraits)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
